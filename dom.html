@@ -8,6 +8,63 @@
 <body>
     <div>
         <p id="messege"> Js DOM</p>
+
+        <input type="radio" name="language" value="js">
+        <input type="radio" name="language" value="python">
+
     </div>
+
+    <div>
+        <h1 class="messege">first heading</h1>
+        <div id="container">
+        <h1 class="messege">second heading</h1>
+        <h1 class="messege">third heading</h1>
+        <h1 class="messege">fourth heading</h1>
+         </div>
+    </div>
+
+    <script>
+        // 1. getElementById 
+     let msg = document.getElementById("messege");
+     console.log(msg);
+    //   2. getElementsByName
+    let btn = document.getElementsByName("language");
+    console.log(btn);
+
+    // 3. getElmentsByTagName() 
+    // accepts a tag name and returns a live html collectio of elememnts.
+     let heading  = document.getElementsByTagName("h1");
+     console.log(heading);
+
+    //  4. getElmentsByClassName()  method returns an array like of objects of the child elements with a specified class name
+     let mssg = document.getElementsByClassName("messege");
+     console.log(mssg);
+
+     // 5 queryselector   //we can select id using # and elemnts too
+     let mqs = document.querySelector(".messege");
+     console.log(mqs);
+     let mqss = document.querySelectorAll(".messege");
+     console.log(mqss);
+
+     let cont = document.getElementById("container");
+     let mqsss = cont.querySelectorAll(".messege");
+     console.log(mqsss);
+
+     // createElement()
+     let div  = document.createElement("div");
+     div.innerHTML = "<p> Welcome to India</p>";
+
+     // to add it in the body 
+    //  use body.appendChild()
+    document.body.appendChild(div);
+
+    // we can also add i or className
+    div.className = "tittle";
+     console.log(div);
+
+
+     
+
+    </script>
 </body>
 </html>
