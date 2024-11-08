@@ -6,11 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="username" placeholder="username">
+    <input type="text" id="username" placeholder="username" style="background-color: blue; font-size: 27px;">
     <script>
         let inputBox = document.getElementById("username");
 
         console.log(inputBox.attributes); // tyoev id placehoder 
+        // 1. GE ATTRIBUTE 
+        console.log(inputBox.getAttribute("type")); // text
+        // 2.setattribute
+        inputBox.setAttribute("class", "user");
+         console.log(inputBox);
+
+        //  3. remove attributes
+           inputBox.removeAttribute("placeholder");
+           console.log(inputBox);
+
+        //    we also have the style property 
+        console.log(inputBox.style);
+        console.log(inputBox.style.backgroundColor);
+        inputBox.style.padding = "10px";
+        console.log(inputBox);
+
+        // classList property 
+    
+        console.log(inputBox.classList);
+        // adda new class
+        inputBox.classList.add("new", "new2");
+        console.log(inputBox);
+
+        inputBox.classList.remove("user");
+        console.log(inputBox);
+
+
     </script>
 </body>
 </html>
