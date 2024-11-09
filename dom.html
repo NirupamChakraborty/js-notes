@@ -22,6 +22,15 @@
         <h1 class="messege">fourth heading</h1>
          </div>
     </div>
+    
+    <div>
+        <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>blog</li>
+            <li>project</li>
+        </ul>
+    </div>
 
     <script>
         // 1. getElementById 
@@ -61,6 +70,14 @@
     // we can also add i or className
     div.className = "tittle";
      console.log(div);
+
+     // append child
+     let menu = document.getElementById("menu");
+
+     let lsit = document.createElement("li");
+     list.innerHTML = "contact";
+
+     menu.appendChild(list)
 
 
      

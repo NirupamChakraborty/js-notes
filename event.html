@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  event listener</title>
+</head>
+<body>
+    <div id="container">
+        <!-- <button type="button" onclick="console.log('hello, its button click');"> click here</button> -->
+        <button type="button" onclick=" DisplayMsg()"> click here</button>
+    </div>
+    <!--  for  click  event listener we have onclick event listener -->
+
+
+     <!-- second method is to add events in js -->
+      <div id="button">
+        <button id="btn">please click button</button>
+      </div>
+<script>
+    function DisplayMsg(){
+        console.log("button clicked from function");
+    }
+
+
+    // second method is to add events in js
+
+    let btn = document.getElementById("btn");
+    btn.onclick  =  function(){
+        console.log("clicked");
+    }
+
+    // addeventlistener // removeeventlistener
+    btn.addEventListener('click' , function(){
+        console.log("button cklicked");
+    });
+
+    // remove event listener 
+    // btn.removeEventListener('click'," external name function --> "displayMsg""" ) // like function displayMsg(){ console.log("message show")};
+
+    //some usefull events
+    
+</script>
+</body>
+</html>
+
+
