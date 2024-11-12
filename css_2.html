@@ -24,6 +24,7 @@
         margin-top: 89px;
         margin: 38px 48px 58px 68px;
         margin: auto; /*distribute space in left and right*/
+        /* margin-bottom: 999px;  */
          
         /* padding is same as margin */
         padding: 50px;
@@ -41,6 +42,11 @@
         font-size: 20px ;
         font-size: 1.4vw;
 
+        /* display */
+
+        /* visibility: hidden; */
+        /* display: none; */
+
        }
        
        .class a{
@@ -55,22 +61,36 @@
        .nav{
         background: blue ;
         list-style-type: circle ;
+        
        }
 
        .items{
            background: rgb(97, 49, 17);
            margin: 0;
            height: 74px;
+           padding: 20px 20px;
+           /* width: 50%; */
+           /* margin-left: auto; */
+           margin-top: -150px;
+           padding-left: 500px;
+
        }
  
        .item{
-          background: yellow;
+          /* background: yellow; */
+
+
+          /* display properties */
+          display: inline;
+          
        }
         
        a{
         text-decoration: none;
         text-style: italic;
         letter-spacing: 2px;
+        color: white;
+        margin: 2px solid white;
        }
 
        a:hover{
@@ -81,6 +101,17 @@
 
        a:active{
         font-size: 37px;
+       }
+
+
+       /* .class-2{
+        vissibility: hidden;
+       } */
+
+       #box{
+        postion: reletive;
+        bottom: 0;
+        right: 0;
        }
     </style>
 </head>
@@ -93,5 +124,7 @@
           <li class="item"><a  class="a-tag"href="/this">about</a></li>
         </ul>
     </div>
+    <div class="class" id="box">I am a div <a href="www.google.com">Google</a> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde delectus amet molestias laborum culpa, explicabo numquam maiores distinctio. Sunt pariatur, corrupti qui, possimus ipsam consequatur temporibus hic voluptatum, vel dolore ab fuga consequuntur quasi eos? Nulla, minima rem?</div>
+
 </body>
 </html>
