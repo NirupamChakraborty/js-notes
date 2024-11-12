@@ -34,6 +34,13 @@
         /* text color */
         color: blue;
         text-align:center;
+
+        /* fonts */
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 20px ;
+        font-size: 1.4vw;
+
        }
        
        .class a{
@@ -47,25 +54,43 @@
 
        .nav{
         background: blue ;
+        list-style-type: circle ;
        }
 
        .items{
            background: rgb(97, 49, 17);
+           margin: 0;
+           height: 74px;
        }
  
        .item{
           background: yellow;
        }
+        
+       a{
+        text-decoration: none;
+        text-style: italic;
+        letter-spacing: 2px;
+       }
 
+       a:hover{
+           background-color: pink;
+           color: rgb(46, 198, 198); /* changes text color */
+           font-size: 37px;
+        }
+
+       a:active{
+        font-size: 37px;
+       }
     </style>
 </head>
 <body>
     <div class="class">I am a div <a href="www.google.com">Google</a> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde delectus amet molestias laborum culpa, explicabo numquam maiores distinctio. Sunt pariatur, corrupti qui, possimus ipsam consequatur temporibus hic voluptatum, vel dolore ab fuga consequuntur quasi eos? Nulla, minima rem?</div>
     <div class="nav">
         <ul class="items">
-          <li class="item">home</li>
-          <li class="item">about</li>
-          <li class="item">contact</li>
+          <li class="item"><a  class="a-tag" href="/this">home</a></li>
+          <li class="item"><a class="a-tag" href="/this">contact</a></li>
+          <li class="item"><a  class="a-tag"href="/this">about</a></li>
         </ul>
     </div>
 </body>
